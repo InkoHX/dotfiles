@@ -18,5 +18,9 @@ git clone https://github.com/InkoHX/dotfiles.git
 cd dotfiles
 
 # Run bootstrap.mjs (google/zx must be installed)
+# Save a backup of all target files in "~/dotfiles/backup" and create a symbolic link.
 ./bootstrap.mjs
+
+# You can also choose to create them individually.
+./zellij/create-symbolic.mjs
 ```
