@@ -3,8 +3,8 @@
 ## Requirements
 
 - [google/zx](https://github.com/google/zx)
-- [starship](https://starship.rs/)
-- [volta](https://volta.sh)
+- [Starship](https://starship.rs/)
+- [Volta](https://volta.sh)
 - [Zellij](https://zellij.dev/)
 - [Vim](https://www.vim.org/)
 - [GitHub CLI](https://cli.github.com/)
