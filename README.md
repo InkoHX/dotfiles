@@ -15,7 +15,7 @@
 - [`vim`](https://www.vim.org/)
 - [`gh`](https://cli.github.com/)
 
-## Fonts
+### Fonts
 
 - [PlemolJP35 Console NF](https://github.com/yuru7/PlemolJP)
 
