@@ -14,10 +14,15 @@ const outDir = path.join(os.homedir(), '.config', 'fish')
 const sources = await glob('**/*.fish', { cwd: __dirname })
 
 if (fs.existsSync(outDir)) {
-  const backupPath = path.join(os.homedir(), 'dotfiles_backup', 'fish', Date.now().toString())
+  const backupPath = path.join(
+    os.homedir(),
+    'dotfiles_backup',
+    'fish',
+    Date.now().toString()
+  )
 
   await $`mkdir -p ${backupPath}`
-  await $`cp -r ${outDir+'/.'} ${backupPath}`
+  await $`cp -r ${outDir + '/.'} ${backupPath}`
 }
 
 for (const source of sources) {
