@@ -3,23 +3,17 @@
 ## Requirements
 
 - [**google/zx**](https://github.com/google/zx)
-- `starship`
-  - [Starship](https://starship.rs/)
-- `zellij`
-  - [Zellij](https://zellij.dev/)
-- `fish`
+- [`starship`](https://starship.rs/)
+- [`zellij`](https://zellij.dev/)
+- [`fish`](https://fishshell.com/)
   - `starship`
-  - [Fish](https://fishshell.com/)
   - [Volta](https://volta.sh)
-- `alacritty`
-  - [Alacritty](https://github.com/alacritty/alacritty)
+- [`alacritty`](https://github.com/alacritty/alacritty)
   - `fish`
   - `starship`
   - `zellij`
-- `vim`
-  - [Vim](https://www.vim.org/)
-- `gh`
-  - [GitHub CLI](https://cli.github.com/)
+- [`vim`](https://www.vim.org/)
+- [`gh`](https://cli.github.com/)
 
 ## Fonts
 
