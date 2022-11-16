@@ -3,8 +3,6 @@
 import 'zx/globals'
 import { spinner } from 'zx/experimental'
 
-$.verbose = false
-
 spinner('Creating symbolic links...', () =>
   Promise.all([
     $`./zellij/create-symbolic.mjs`,
