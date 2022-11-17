@@ -8,3 +8,4 @@ await $`./starship/create-symbolic.mjs`
 await $`./gh/create-symbolic.mjs`
 await $`./fish/create-symbolic.mjs`
 await $`./alacritty/create-symbolic.mjs`
+await $`./git/create-symbolic.mjs`

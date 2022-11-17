@@ -1,0 +1,26 @@
+[commit]
+  gpgsign = true
+
+[core]
+  editor = vim
+  pager = delta
+  autocrlf = false
+
+[pull]
+  rebase = true
+
+[interactive]
+  diffFilter = delta --color-only
+
+[delta]
+  navigate = true
+  line-numbers = true
+
+[merge]
+  conflictstyle = diff3
+
+[diff]
+  colorMoved = default
+
+[include]
+	path = ~/.gitconfig-local
