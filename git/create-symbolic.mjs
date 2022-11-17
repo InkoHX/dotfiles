@@ -7,18 +7,23 @@ await $`${path.join(__dirname, 'create-local-config.mjs')}`
 console.log(
   [
     '',
-    `${chalk.yellow.bold('InkoHX/dotfiles')} - ${chalk.redBright(
-      'Git'
-    )}`,
+    `${chalk.yellow.bold('InkoHX/dotfiles')} - ${chalk.redBright('Git')}`,
     '',
   ].join('\n')
 )
 
-const backupPath = path.join(os.homedir(), 'dotfiles_backup', 'git', Date.now().toString())
+const backupPath = path.join(
+  os.homedir(),
+  'dotfiles_backup',
+  'git',
+  Date.now().toString()
+)
 const files = new Map([
   [path.join(__dirname, '.gitconfig'), path.join(os.homedir(), '.gitconfig')],
-  ...(await glob('**/*', { cwd: path.join(__dirname, 'config') }))
-    .map(it => [path.join(__dirname, 'config', it), path.join(os.homedir(), '.config', 'git', it)])
+  ...(await glob('**/*', { cwd: path.join(__dirname, 'config') })).map(it => [
+    path.join(__dirname, 'config', it),
+    path.join(os.homedir(), '.config', 'git', it),
+  ]),
 ])
 
 await $`mkdir -p ${backupPath}`
