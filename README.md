@@ -5,6 +5,10 @@
 - [**google/zx**](https://github.com/google/zx)
 - [`starship`](https://starship.rs/)
 - [`zellij`](https://zellij.dev/)
+- [`vim`](https://www.vim.org/)
+- [`git`](https://git-scm.com/)
+  - [Delta](https://github.com/dandavison/delta)
+  - `vim`
 - [`fish`](https://fishshell.com/)
   - `starship`
   - [Volta](https://volta.sh)
@@ -12,7 +16,6 @@
   - `fish`
   - `starship`
   - `zellij`
-- [`vim`](https://www.vim.org/)
 - [`gh`](https://cli.github.com/)
 
 ### Fonts
@@ -20,6 +23,8 @@
 - [PlemolJP35 Console NF](https://github.com/yuru7/PlemolJP)
 
 ## Install
+
+> **Note** Some interactive operation is required.
 
 ```sh
 # Clone this repository
