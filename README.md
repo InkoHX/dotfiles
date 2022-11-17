@@ -24,7 +24,7 @@
 
 ## Install
 
-> **Note** Some interactive operation is required.
+> **Note** Interactive operations may have to be performed.
 
 ```sh
 # Clone this repository
