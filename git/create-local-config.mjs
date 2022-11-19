@@ -16,13 +16,13 @@ let signingKey =
     .quiet()
 
 email = email.exitCode
-  ? await question('Enter your email: ')
+  ? (await question('Enter your email: ')).trim()
   : email.stdout.trim()
 username = username.exitCode
-  ? await question('Enter your name: ')
+  ? (await question('Enter your name: ')).trim()
   : username.stdout.trim()
 signingKey = signingKey.exitCode
-  ? await question('Enter your signingKey (Enter to skip this step): ')
+  ? (await question('Enter your signingKey (Enter to skip this step): ')).trim()
   : signingKey.stdout.trim()
 
 await $`git config --file ~/.gitconfig-local user.email ${email}`
