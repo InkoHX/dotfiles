@@ -6,8 +6,10 @@
 - [`starship`](https://starship.rs/)
 - [`zellij`](https://zellij.dev/)
 - [`vim`](https://www.vim.org/)
+- [`gh`](https://cli.github.com/)
 - [`git`](https://git-scm.com/)
   - [Delta](https://github.com/dandavison/delta)
+  - `gh`
   - `vim`
 - [`fish`](https://fishshell.com/)
   - `starship`
@@ -16,7 +18,6 @@
   - `fish`
   - `starship`
   - `zellij`
-- [`gh`](https://cli.github.com/)
 
 ### Fonts
 
