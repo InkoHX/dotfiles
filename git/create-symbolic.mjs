@@ -26,8 +26,10 @@ const files = new Map([
   ]),
 ])
 
-await $`mkdir -p ${backupPath}`
-await $`cp ~/.gitconfig ${backupPath}`
+if (fs.existsSync(path.join(os.homedir(), '.gitconfig'))) {
+  await $`mkdir -p ${backupPath}`
+  await $`cp ~/.gitconfig ${backupPath}`
+}
 
 if (fs.existsSync(path.join(os.homedir(), '.config', 'git'))) {
   await $`mkdir -p ${path.join(backupPath, '.config', 'git')}`
