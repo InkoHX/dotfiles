@@ -40,5 +40,5 @@ for (const [srcPath, distPath] of files) {
   // Create symbolic link
   await $`rm -rf ${distPath}`
   await $`mkdir -p ${path.dirname(distPath)}`
-  await $`ln -s ${srcPath} ${distPath}`
+  await $`ln -nfs ${srcPath} ${distPath}`
 }

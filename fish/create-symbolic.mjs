@@ -31,5 +31,5 @@ for (const source of sources) {
 
   await $`rm -f ${outFile}`
   await $`mkdir -p ${path.dirname(outFile)}`
-  await $`ln -s ${sourcePath} ${outFile}`
+  await $`ln -nfs ${sourcePath} ${outFile}`
 }

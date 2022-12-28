@@ -34,7 +34,7 @@ if (fs.existsSync(targetPath)) {
 
 // Create symbolic link
 await $`mkdir -p ${path.dirname(targetPath)}`
-await $`ln -s ${sourcePath} ${targetPath}`
+await $`ln -nfs ${sourcePath} ${targetPath}`
 
 console.log(
   [
