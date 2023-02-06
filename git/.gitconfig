@@ -3,6 +3,9 @@
   pager = delta
   autocrlf = false
 
+[push]
+	autoSetupRemote = true
+
 [pull]
   rebase = true
 
