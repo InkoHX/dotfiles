@@ -5,6 +5,13 @@ discharging_symbol = "⇣ "
 unknown_symbol = "❓ "
 empty_symbol = "❗ "
 
+[character]
+success_symbol = "[󱗆](bold cyan)"
+error_symbol = "[󱗆](bold red)"
+
+[aws]
+symbol = "  "
+
 [erlang]
 symbol = "ⓔ "
 
