@@ -1,14 +1,14 @@
 lockfileVersion: 5.4
 
 specifiers:
-  prettier: ^2.8.4
+  prettier: ^3.0.0
   zx: ^7.2.0
 
 dependencies:
   zx: 7.2.0
 
 devDependencies:
-  prettier: 2.8.4
+  prettier: 3.0.0
 
 packages:
 
@@ -261,9 +261,9 @@ packages:
     engines: {node: '>=8.6'}
     dev: false
 
-  /prettier/2.8.4:
-    resolution: {integrity: sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==}
-    engines: {node: '>=10.13.0'}
+  /prettier/3.0.0:
+    resolution: {integrity: sha512-zBf5eHpwHOGPC47h0zrPyNn+eAEIdEzfywMoYn2XPi0P44Zp0tSq64rq0xAREh4auw2cJZHo9QUob+NqCQky4g==}
+    engines: {node: '>=14'}
     hasBin: true
     dev: true
 
