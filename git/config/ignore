@@ -1,8 +1,0 @@
-# Node.js
-node_modules/
-
-# JetBrains IDE
-.idea
-
-# Log files
-*.log
