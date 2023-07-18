@@ -1,0 +1,34 @@
+[core]
+  editor = "nvim"
+  pager = "delta"
+  autocrlf = false
+
+[init]
+  defaultBranch = "main"
+
+[push]
+  autoSetupRemote = true
+
+[pull]
+  rebase = true
+
+[interactive]
+  diffFilter = "delta --color-only"
+
+[delta]
+  navigate = true
+  line-numbers = true
+
+[merge]
+  conflictstyle = "diff3"
+
+[diff]
+  colorMoved = "default"
+
+[include]
+  path = "~/.gitconfig-local"
+
+[credential "https://github.com"]
+  helper = "!/usr/bin/gh auth git-credential"
+[credential "https://gist.github.com"]
+  helper = "!/usr/bin/gh auth git-credential"

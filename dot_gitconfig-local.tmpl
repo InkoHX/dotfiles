@@ -1,0 +1,8 @@
+[user]
+	email = {{ .email | quote }}
+	name = {{ .username | quote }}
+{{- if not (eq .signingKey "")  }}
+	signingkey = {{ .signingKey | quote }}
+[commit]
+	gpgsign = true
+{{- end }}

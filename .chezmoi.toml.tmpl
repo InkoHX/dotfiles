@@ -1,0 +1,20 @@
+{{ $email := promptStringOnce . "email" "What is your email address" -}}
+{{ $username := promptStringOnce . "username" "What is your username" -}}
+{{ $signingKey := promptStringOnce . "signingKey" "What is your signingKey" -}}
+{{- if or (eq $email "") (eq $username "") }}
+	{{- writeToStdout "Username and Email are required.\n" -}}
+	{{- exit 1 }}
+{{- end }}
+#########################
+# Chezmoi Configuration #
+#########################
+
+encryption = "gpg"
+
+[edit]
+  command = "nvim"
+
+[data]
+  email = {{ $email | quote }}
+  username = {{ $username | quote }}
+  signingKey = {{ $signingKey | quote }}
