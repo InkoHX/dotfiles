@@ -18,7 +18,8 @@ paru -S --noconfirm --needed \
   alacritty \
   git-delta \
   zellij \
-  fcitx5-im fcitx5-mozc
+  fcitx5-im fcitx5-mozc \
+  nushell
 
 # Install packages from AUR
 
