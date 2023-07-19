@@ -17,9 +17,11 @@ paru -S --noconfirm --needed \
   neovim \
   alacritty \
   git-delta \
-  zellij
+  zellij \
+  fcitx5-im fcitx5-mozc
 
 # Install packages from AUR
 
 paru -S --noconfirm --needed \
-  volta-bin
+  volta-bin \
+  ttf-udev-gothic
