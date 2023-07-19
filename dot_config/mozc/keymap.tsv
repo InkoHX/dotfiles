@@ -4,7 +4,11 @@ status	key	command
 Composition	Eisu	IMEOff
 Conversion	Eisu	IMEOff
 Precomposition	Eisu	IMEOff
+Conversion	Hankaku/Zenkaku	IMEOff
+Precomposition	Hankaku/Zenkaku	IMEOff
+Composition	Hankaku/Zenkaku	IMEOff
 DirectInput	Eisu	IMEOn
+DirectInput	Hankaku/Zenkaku	IMEOn
 Composition	Ctrl d	MoveCursorRight
 Composition	Ctrl l	MoveCursorRight
 Composition	Right	MoveCursorRight
