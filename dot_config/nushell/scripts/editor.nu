@@ -1,0 +1,1 @@
+let-env EDITOR = "nvim"
