@@ -91,7 +91,7 @@ mkdir ~/.cache/starship
 starship init nu | save -f ~/.cache/starship/init.nu
 
 # Bitwardeb
-let-env BW_SESSION = (bw unlock --raw)
+#let-env BW_SESSION = (bw unlock --raw)
 
 # Editor
 let-env EDITOR = "nvim"
