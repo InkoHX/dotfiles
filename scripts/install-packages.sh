@@ -22,7 +22,14 @@ paru -S --noconfirm --needed \
   nushell
 
 # Install packages from AUR
-
 paru -S --noconfirm --needed \
   volta-bin \
   ttf-udev-gothic
+
+# Install packages from npm
+volta install \
+  yarn \
+  pnpm \
+  node@18 \
+  @bitwarden/cli \
+  vercel
