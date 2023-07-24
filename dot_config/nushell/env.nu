@@ -89,3 +89,13 @@ let-env NU_PLUGIN_DIRS = [
 # Starship
 mkdir ~/.cache/starship
 starship init nu | save -f ~/.cache/starship/init.nu
+
+# Bitwardeb
+let-env BW_SESSION = (bw unlock --raw)
+
+# Editor
+let-env EDITOR = "nvim"
+
+# Volta
+let-env VOLTA_HOME = ($env.HOME | path join ".volta")
+let-env HOME = ($env.PATH | split row (char esep) | append ($env.VOLTA_HOME | path join "bin"))
