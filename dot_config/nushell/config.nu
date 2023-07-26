@@ -554,3 +554,7 @@ let-env config = {
 
 # Starship
 source ~/.cache/starship/init.nu
+
+# Custom commands
+## Volta
+source ./custom-commands/volta-utils.nu
