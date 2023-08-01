@@ -161,6 +161,7 @@ keybinds {
     }
     shared_except "tmux" "locked" {
         bind "Ctrl b" { SwitchToMode "Tmux"; }
+        unbind "Ctrl b"
     }
 }
 
