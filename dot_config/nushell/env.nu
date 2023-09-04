@@ -100,4 +100,4 @@ $env.EDITOR = "nvim"
 
 # Volta
 $env.VOLTA_HOME = ($env.HOME | path join ".volta")
-$env.HOME = ($env.PATH | split row (char esep) | append ($env.VOLTA_HOME | path join "bin"))
+$env.PATH = ($env.PATH | split row (char esep) | append ($env.VOLTA_HOME | path join "bin"))
