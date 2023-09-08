@@ -22,13 +22,13 @@ paru -S --noconfirm --needed \
   nushell \
   deno \
   docker \
-  terraform \
-  vscodium
+  terraform
 
 # Install packages from AUR
 paru -S --noconfirm --needed \
   volta-bin \
-  ttf-udev-gothic
+  ttf-udev-gothic \
+  vscodium-bin
 
 # Install packages from npm
 volta install \
