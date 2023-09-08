@@ -557,4 +557,4 @@ source ~/.cache/starship/init.nu
 
 # Custom commands
 ## Volta
-source ~/.config/nushell/custom-commands/volta-utils.nu
+use ~/.config/nushell/commands/ *
