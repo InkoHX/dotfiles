@@ -34,6 +34,6 @@ paru -S --noconfirm --needed \
 volta install \
   yarn \
   pnpm \
-  node@18 \
+  node@20 \
   @bitwarden/cli \
   vercel
