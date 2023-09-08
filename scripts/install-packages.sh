@@ -22,7 +22,8 @@ paru -S --noconfirm --needed \
   nushell \
   deno \
   docker \
-  terraform
+  terraform \
+  vscodium
 
 # Install packages from AUR
 paru -S --noconfirm --needed \
