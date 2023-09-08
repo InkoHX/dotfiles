@@ -22,7 +22,8 @@ let extensions = [
   "tamasfe.even-better-toml",
   "rust-lang.rust-analyzer",
   "clinyong.vscode-css-modules",
-  "bradlc.vscode-tailwindcss"
+  "bradlc.vscode-tailwindcss",
+  "k--kato.intellij-idea-keybindings"
 ]
 
 # Install extensions
