@@ -20,7 +20,9 @@ let extensions = [
   "ms-vscode-remote.remote-ssh",
   "ms-vscode-remote.remote-containers",
   "tamasfe.even-better-toml",
-  "rust-lang.rust-analyzer"
+  "rust-lang.rust-analyzer",
+  "clinyong.vscode-css-modules",
+  "bradlc.vscode-tailwindcss"
 ]
 
 # Install extensions
