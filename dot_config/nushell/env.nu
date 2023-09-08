@@ -13,7 +13,7 @@ def create_left_prompt [] {
     }
 
     let dir = ([
-        ($env.PWD | str substring 0..($home | str length) | str replace --string $home "~"),
+        ($env.PWD | str substring 0..($home | str length) | str replace $home "~"),
         ($env.PWD | str substring ($home | str length)..)
     ] | str join)
 
@@ -21,7 +21,7 @@ def create_left_prompt [] {
     let separator_color = (if (is-admin) { ansi light_red_bold } else { ansi light_green_bold })
     let path_segment = $"($path_color)($dir)"
 
-    $path_segment | str replace --all --string (char path_sep) $"($separator_color)/($path_color)"
+    $path_segment | str replace --all (char path_sep) $"($separator_color)/($path_color)"
 }
 
 def create_right_prompt [] {
@@ -30,7 +30,7 @@ def create_right_prompt [] {
     let time_segment = ([
         (ansi reset)
         $time_segment_color
-        (date now | date format '%m/%d/%Y %r')
+        (date now | format date '%m/%d/%Y %r')
     ] | str join | str replace --all "([/:])" $"(ansi light_magenta_bold)${1}($time_segment_color)" |
         str replace --all "([AP]M)" $"(ansi light_magenta_underline)${1}")
 
@@ -101,3 +101,4 @@ $env.EDITOR = "nvim"
 # Volta
 $env.VOLTA_HOME = ($env.HOME | path join ".volta")
 $env.PATH = ($env.PATH | split row (char esep) | append ($env.VOLTA_HOME | path join "bin"))
+$env.VOLTA_FEATURE_PNPM = "1"
