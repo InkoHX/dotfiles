@@ -28,7 +28,9 @@ paru -S --noconfirm --needed \
 paru -S --noconfirm --needed \
   volta-bin \
   ttf-udev-gothic \
-  vscodium-bin
+  vscodium-bin \
+  vscodium-bin-features \
+  vscodium-bin-marketplace
 
 # Install packages from npm
 volta install \
