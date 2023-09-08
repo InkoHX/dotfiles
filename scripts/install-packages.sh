@@ -19,7 +19,10 @@ paru -S --noconfirm --needed \
   git-delta \
   zellij \
   fcitx5-im fcitx5-mozc \
-  nushell
+  nushell \
+  deno \
+  docker \
+  terraform
 
 # Install packages from AUR
 paru -S --noconfirm --needed \
