@@ -20,5 +20,6 @@
         "nano",
         "tmux",
         "nvim"
-    ]
+    ],
+    "terminal.integrated.enablePersistentSessions": false
 }
