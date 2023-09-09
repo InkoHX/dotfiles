@@ -23,7 +23,8 @@ let extensions = [
   "rust-lang.rust-analyzer",
   "clinyong.vscode-css-modules",
   "bradlc.vscode-tailwindcss",
-  "k--kato.intellij-idea-keybindings"
+  "k--kato.intellij-idea-keybindings",
+  "redhat.vscode-yaml"
 ]
 
 # Install extensions
