@@ -1,13 +1,43 @@
-# Voltaを使ってインストールしたパッケージを一括でアップデートするためのユーティリティ
-#
-# 2023/09/08
-# volta-helper update のexcludeオプションのデフォルト値がなぜ [''] になっているのかというと、list<string>型において空リストが許されないためである。
+const types = [
+    "runtime",
+    "package",
+    "package-manager"
+]
+
 export def update [
     --type (-t): list<string> = ["runtime", "package-manager", "package"] # アップデートする種類 (runtime, package-manager, package が指定可能)
     --exclude (-e): list<string> = [""] # アップデートから除外するパッケージ
     --latest (-l): bool # メジャーバージョンを無視して最新版をインストールする
 ] {
-    let targets = (volta list --format=plain
+    if ($type | where $it not-in $types | length) != 0 {
+        error make -u { msg: $'Must be ($types | str join ", ")' }
+    }
+
+    let targets = list
+        | where type in $type
+        | where package.name not-in $exclude
+
+    if ($targets | length) == 0 {
+        error make { msg: "アップデートできるパッケージがありません。" }
+    }
+    
+    if $latest {
+        let packages = $targets
+            | get package.name
+            | each { |it| $"($it)@latest" }
+
+        volta install $packages
+    } else {
+        let packages = $targets
+            | get package
+            | each { |it| $"($it.name)@($it.version | str replace -r "^([0-9]+)\\..*" "$1")" }
+
+        volta install $packages
+    }
+}
+
+export def list [] {
+    (volta list --format=plain
         | str trim
         | split row "\n"
         | split column -r "\\s"
@@ -23,22 +53,5 @@ export def update [
                 }
             } 
         }
-        | where type in $type
-        | where package.name not-in $exclude)
-
-    if ($targets | length) == 0 {
-        print -e "アップデートできるパッケージがありません。"
-    } else if $latest {
-        let packages = $targets
-            | get package.name
-            | each { |it| $"($it)@latest" }
-
-        volta install $packages
-    } else {
-        let packages = $targets
-            | get package
-            | each { |it| $"($it.name)@($it.version | str replace -r "^([0-9]+)\\..*" "$1")" }
-
-        volta install $packages
-    }
+    )
 }
