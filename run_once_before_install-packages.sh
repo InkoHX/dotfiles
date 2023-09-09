@@ -23,7 +23,9 @@ paru -S --noconfirm --needed \
   deno \
   docker \
   terraform \
-  btop
+  btop \
+  openssh \
+  gnupg
 
 # Install packages from AUR
 paru -S --noconfirm --needed \
