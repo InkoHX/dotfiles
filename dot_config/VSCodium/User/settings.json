@@ -13,7 +13,7 @@
     "terminal.integrated.fontSize": 15,
     "debug.console.fontFamily": "'UDEV Gothic NF', monospace",
     "debug.console.fontSize": 15,
-    "terminal.integrated.defaultProfile.linux": "nu",
+    "terminal.integrated.defaultProfile.linux": "Nushell",
     "terminal.integrated.localEchoExcludePrograms": [
         "vim",
         "vi",
