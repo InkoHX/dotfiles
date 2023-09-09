@@ -22,7 +22,8 @@ paru -S --noconfirm --needed \
   nushell \
   deno \
   docker \
-  terraform
+  terraform \
+  btop
 
 # Install packages from AUR
 paru -S --noconfirm --needed \
