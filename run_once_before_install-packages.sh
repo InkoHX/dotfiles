@@ -33,12 +33,5 @@ paru -S --noconfirm --needed \
   ttf-udev-gothic \
   vscodium-bin \
   vscodium-bin-features \
-  vscodium-bin-marketplace
-
-# Install packages from npm
-volta install \
-  yarn \
-  pnpm \
-  node@20 \
-  @bitwarden/cli \
-  vercel
+  vscodium-bin-marketplace \
+  bitwarden-cli-bin
