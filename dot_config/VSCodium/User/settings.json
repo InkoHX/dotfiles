@@ -21,5 +21,6 @@
         "tmux",
         "nvim"
     ],
-    "terminal.integrated.enablePersistentSessions": false
+    "terminal.integrated.enablePersistentSessions": false,
+    "workbench.iconTheme": "material-icon-theme"
 }

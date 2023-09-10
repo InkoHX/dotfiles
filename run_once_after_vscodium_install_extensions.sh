@@ -24,7 +24,8 @@ let extensions = [
   "clinyong.vscode-css-modules",
   "bradlc.vscode-tailwindcss",
   "k--kato.intellij-idea-keybindings",
-  "redhat.vscode-yaml"
+  "redhat.vscode-yaml",
+  "PKief.material-icon-theme"
 ]
 
 # Install extensions
