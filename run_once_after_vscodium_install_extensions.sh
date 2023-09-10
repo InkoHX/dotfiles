@@ -25,7 +25,8 @@ let extensions = [
   "bradlc.vscode-tailwindcss",
   "k--kato.intellij-idea-keybindings",
   "redhat.vscode-yaml",
-  "PKief.material-icon-theme"
+  "PKief.material-icon-theme",
+  "Prisma.prisma"
 ]
 
 # Install extensions
