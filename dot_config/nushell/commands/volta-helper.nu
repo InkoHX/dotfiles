@@ -40,8 +40,7 @@ export def list [] {
     (volta list --format=plain
         | str trim
         | split row "\n"
-        | split column -r "\\s"
-        | rename type package
+        | split column -r "\\s" type package
         | select type package
         | each 
         { |it| 
