@@ -5,7 +5,7 @@ const types = [
 ]
 
 export def update [
-    --type (-t): list<string> = ["runtime", "package-manager", "package"] # アップデートする種類 (runtime, package-manager, package が指定可能)
+    --type (-t): list<string> = $types # アップデートする種類 (runtime, package-manager, package が指定可能)
     --exclude (-e): list<string> = [""] # アップデートから除外するパッケージ
     --latest (-l): bool # メジャーバージョンを無視して最新版をインストールする
 ] {
@@ -47,8 +47,8 @@ export def list [] {
             {
                 type: $it.type, 
                 package: {
-                    name: ($it.package | str replace -r '^(@?.+)@.*$' "$1"),
-                    version: ($it.package | str replace -r '^.+@(.+)$' "$1")
+                    name: ($it.package | str replace -r "^(@?.+)@.*$" "$1"),
+                    version: ($it.package | str replace -r "^.+@(.+)$" "$1")
                 }
             } 
         }
