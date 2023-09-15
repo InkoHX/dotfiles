@@ -23,5 +23,6 @@
     ],
     "terminal.integrated.enablePersistentSessions": false,
     "workbench.iconTheme": "material-icon-theme",
-    "redhat.telemetry.enabled": false
+    "redhat.telemetry.enabled": false,
+    "git.confirmSync": false
 }
