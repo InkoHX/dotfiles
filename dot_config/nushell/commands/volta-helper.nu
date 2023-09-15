@@ -10,7 +10,7 @@ export def update [
     --latest (-l): bool # メジャーバージョンを無視して最新版をインストールする
 ] {
     if ($type | where $it not-in $types | length) != 0 {
-        error make -u { msg: $'Must be ($types | str join ", ")' }
+        error make -u { msg: $'typeオプションに指定できる値は($types | str join ", ")である必要があります。' }
     }
 
     let targets = list
