@@ -18,7 +18,7 @@ export def update [
         | where package.name not-in $exclude
 
     if ($targets | length) == 0 {
-        error make { msg: "アップデートできるパッケージがありません。" }
+        error make -u { msg: "アップデートできるパッケージがありません。" }
     }
     
     if $latest {
