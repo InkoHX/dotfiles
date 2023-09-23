@@ -26,7 +26,8 @@ let extensions = [
   "k--kato.intellij-idea-keybindings",
   "redhat.vscode-yaml",
   "PKief.material-icon-theme",
-  "Prisma.prisma"
+  "Prisma.prisma",
+  "astro-build.astro-vscode"
 ]
 
 # Install extensions
