@@ -2,6 +2,7 @@
   "debug.console.fontFamily": "'UDEV Gothic NF', monospace",
   "debug.console.fontSize": 15,
   "editor.fontFamily": "'UDEV Gothic 35', monospace",
+  "editor.minimap.enabled": false,
   "editor.stickyScroll.enabled": true,
   "editor.tabSize": 2,
   "files.eol": "\n",
