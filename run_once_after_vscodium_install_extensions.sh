@@ -27,7 +27,8 @@ let extensions = [
   "redhat.vscode-yaml",
   "PKief.material-icon-theme",
   "Prisma.prisma",
-  "astro-build.astro-vscode"
+  "astro-build.astro-vscode",
+  "WakaTime.vscode-wakatime"
 ]
 
 # Install extensions
