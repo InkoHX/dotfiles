@@ -13,7 +13,6 @@
     "terminal.integrated.fontSize": 15,
     "debug.console.fontFamily": "'UDEV Gothic NF', monospace",
     "debug.console.fontSize": 15,
-    "terminal.integrated.defaultProfile.linux": "Nushell",
     "terminal.integrated.localEchoExcludePrograms": [
         "vim",
         "vi",
@@ -25,5 +24,15 @@
     "workbench.iconTheme": "material-icon-theme",
     "redhat.telemetry.enabled": false,
     "git.confirmSync": false,
-    "terminal.external.linuxExec": "nu"
+    "terminal.integrated.defaultProfile.linux": "Nushell",
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
+        },
+        "Nushell": {
+            "path": "/bin/nu",
+            "icon": "terminal-linux"
+        }
+    }
 }
