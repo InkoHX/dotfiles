@@ -25,7 +25,8 @@ paru -S --noconfirm --needed \
   terraform \
   btop \
   openssh \
-  gnupg
+  gnupg \
+  bat
 
 # Install packages from AUR
 paru -S --noconfirm --needed \
