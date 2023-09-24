@@ -1,38 +1,42 @@
 {
-    "workbench.colorTheme": "Atom One Dark",
-    "editor.fontFamily": "'UDEV Gothic 35', monospace",
-    "files.eol": "\n",
-    "editor.stickyScroll.enabled": true,
-    "editor.tabSize": 2,
-    "files.insertFinalNewline": true,
-    "git.autofetch": true,
-    "git.autoStash": true,
-    "git.enableCommitSigning": true,
-    "git.rebaseWhenSync": true,
-    "terminal.integrated.fontFamily": "'UDEV Gothic NF', monospace",
-    "terminal.integrated.fontSize": 15,
-    "debug.console.fontFamily": "'UDEV Gothic NF', monospace",
-    "debug.console.fontSize": 15,
-    "terminal.integrated.localEchoExcludePrograms": [
-        "vim",
-        "vi",
-        "nano",
-        "tmux",
-        "nvim"
-    ],
-    "terminal.integrated.enablePersistentSessions": false,
-    "workbench.iconTheme": "material-icon-theme",
-    "redhat.telemetry.enabled": false,
-    "git.confirmSync": false,
-    "terminal.integrated.defaultProfile.linux": "Nushell",
-    "terminal.integrated.profiles.linux": {
-        "bash": {
-            "path": "bash",
-            "icon": "terminal-bash"
-        },
-        "Nushell": {
-            "path": "/bin/nu",
-            "icon": "terminal-linux"
-        }
+  "debug.console.fontFamily": "'UDEV Gothic NF', monospace",
+  "debug.console.fontSize": 15,
+  "editor.fontFamily": "'UDEV Gothic 35', monospace",
+  "editor.stickyScroll.enabled": true,
+  "editor.tabSize": 2,
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "git.autoStash": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableCommitSigning": true,
+  "git.rebaseWhenSync": true,
+  "redhat.telemetry.enabled": false,
+  "terminal.integrated.defaultProfile.linux": "Nushell",
+  "terminal.integrated.enablePersistentSessions": false,
+  "terminal.integrated.fontFamily": "'UDEV Gothic NF', monospace",
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.localEchoExcludePrograms":
+  [
+    "vim",
+    "vi",
+    "nano",
+    "tmux",
+    "nvim"
+  ],
+  "terminal.integrated.profiles.linux":
+  {
+    "bash":
+    {
+      "path": "bash",
+      "icon": "terminal-bash"
+    },
+    "Nushell":
+    {
+      "path": "/bin/nu",
+      "icon": "terminal-linux"
     }
+  },
+  "workbench.colorTheme": "Atom One Dark",
+  "workbench.iconTheme": "material-icon-theme"
 }
