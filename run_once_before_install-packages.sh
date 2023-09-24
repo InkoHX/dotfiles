@@ -26,7 +26,8 @@ paru -S --noconfirm --needed \
   btop \
   openssh \
   gnupg \
-  bat
+  bat \
+  rustup
 
 # Install packages from AUR
 paru -S --noconfirm --needed \
