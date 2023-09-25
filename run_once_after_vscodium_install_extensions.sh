@@ -28,7 +28,8 @@ let extensions = [
   "PKief.material-icon-theme",
   "Prisma.prisma",
   "astro-build.astro-vscode",
-  "WakaTime.vscode-wakatime"
+  "WakaTime.vscode-wakatime",
+  "formulahendry.auto-rename-tag"
 ]
 
 # Install extensions
