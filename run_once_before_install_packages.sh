@@ -34,6 +34,5 @@ paru -S --noconfirm --needed \
   volta-bin \
   ttf-udev-gothic \
   vscodium-bin \
-  vscodium-bin-features \
   vscodium-bin-marketplace \
   bitwarden-cli-bin
