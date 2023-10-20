@@ -6,7 +6,7 @@ const types = [
 
 export def update [
     --type (-t): list<string> = $types # アップデートする種類 (runtime, package-manager, package が指定可能)
-    --exclude (-e): list<string> = [""] # アップデートから除外するパッケージ
+    --exclude (-e): list<string> = [] # アップデートから除外するパッケージ
     --latest (-l): bool # メジャーバージョンを無視して最新版をインストールする
 ] {
     if ($type | where $it not-in $types | length) != 0 {
