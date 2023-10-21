@@ -1,4 +1,8 @@
 {
+  "cSpell.enableFiletypes":
+  [
+    "prisma"
+  ],
   "debug.console.fontFamily": "'UDEV Gothic NF', monospace",
   "debug.console.fontSize": 15,
   "editor.bracketPairColorization.enabled": true,
@@ -6,6 +10,7 @@
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.fontFamily": "'UDEV Gothic 35', monospace",
   "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
   "editor.renderControlCharacters": true,
   "editor.renderLineHighlight": "all",
