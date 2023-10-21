@@ -35,4 +35,5 @@ paru -S --noconfirm --needed \
   ttf-udev-gothic \
   vscodium-bin \
   vscodium-bin-marketplace \
-  bitwarden-cli-bin
+  bitwarden-cli-bin \
+  bun-bin
