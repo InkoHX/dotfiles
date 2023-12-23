@@ -557,5 +557,4 @@ source ~/.cache/starship/init.nu
 use ~/.config/nushell/commands/ *
 
 # Aliases
-alias code = vscodium
 alias cat = bat

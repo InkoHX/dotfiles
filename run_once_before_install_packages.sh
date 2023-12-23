@@ -33,7 +33,6 @@ paru -S --noconfirm --needed \
 paru -S --noconfirm --needed \
   volta-bin \
   ttf-udev-gothic \
-  vscodium-bin \
-  vscodium-bin-marketplace \
+  visual-studio-code-bin \
   bitwarden-cli-bin \
   bun-bin

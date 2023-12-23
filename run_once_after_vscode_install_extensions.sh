@@ -33,4 +33,4 @@ let extensions = [
 ]
 
 # Install extensions
-vscodium ($extensions | each { |it| ["--install-extension", $it] } | flatten)
+code ($extensions | each { |it| ["--install-extension", $it] } | flatten)
