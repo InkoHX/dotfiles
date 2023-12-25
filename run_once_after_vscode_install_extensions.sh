@@ -29,7 +29,8 @@ let extensions = [
   "Prisma.prisma",
   "astro-build.astro-vscode",
   "WakaTime.vscode-wakatime",
-  "formulahendry.auto-rename-tag"
+  "formulahendry.auto-rename-tag",
+  "icrawl.discord-vscode"
 ]
 
 # Install extensions
