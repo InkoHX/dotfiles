@@ -20,7 +20,6 @@ paru -S --noconfirm --needed \
   zellij \
   fcitx5-im fcitx5-mozc \
   nushell \
-  deno \
   docker \
   terraform \
   btop \
@@ -31,8 +30,13 @@ paru -S --noconfirm --needed \
 
 # Install packages from AUR
 paru -S --noconfirm --needed \
-  volta-bin \
   ttf-udev-gothic \
   visual-studio-code-bin \
   bitwarden-cli-bin \
-  bun-bin
+
+# Install proto
+# NOTE: AURにあるproto-binを使用すると、proto installが使用できないため公式のスクリプトを使ってインストールすることにした。
+if ! command -v proto &> /dev/null;
+then
+  curl -fsSL https://moonrepo.dev/install/proto.sh | bash
+fi

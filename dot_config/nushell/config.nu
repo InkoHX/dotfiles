@@ -552,9 +552,5 @@ $env.config = {
 # Starship
 source ~/.cache/starship/init.nu
 
-# Custom commands
-## Volta
-use ~/.config/nushell/commands/ *
-
 # Aliases
 alias cat = bat

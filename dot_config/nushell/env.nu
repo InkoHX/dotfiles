@@ -98,7 +98,13 @@ starship init nu | str replace -an "let-env " "$env." | save -f ~/.cache/starshi
 # Editor
 $env.EDITOR = "nvim"
 
-# Volta
-$env.VOLTA_HOME = ($env.HOME | path join ".volta")
-$env.PATH = ($env.PATH | split row (char esep) | append ($env.VOLTA_HOME | path join "bin"))
-$env.VOLTA_FEATURE_PNPM = "1"
+# Proto
+$env.PROTO_HOME = ($env.HOME | path join ".proto")
+$env.PATH = (
+    | $env.PATH
+    | split row (char esep)
+    | append [
+        ($env.PROTO_HOME | path join "shims"),
+        ($env.PROTO_HOME | path join "bin")
+    ]
+)
