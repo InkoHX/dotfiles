@@ -21,7 +21,7 @@ $toolchains | each {|it|
 # Install global dependencies
 let global_dependencies = [
   [toolchain dependencies];
-  [node "vercel@latest"]
+  [node ["vercel@latest"]]
 ]
 
 $global_dependencies | each {|it|
