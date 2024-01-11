@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -euo pipefail
+set -euxo pipefail
 
 chmod 600 ~/.ssh/id_ed25519
 chmod -R u=rw,u+X,go= ~/.gnupg/
