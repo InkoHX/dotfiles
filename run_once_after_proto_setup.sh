@@ -35,5 +35,6 @@ $global_dependencies | each {|it|
 open ~/.proto/.prototools
   | from toml
   | upsert settings.telemetry false # Disable telemetry
+  | upsert settings.auto-install true # Enable auto-install
   | to toml
   | save -f ~/.proto/.prototools
