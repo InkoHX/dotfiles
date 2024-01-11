@@ -3,11 +3,11 @@
 # Install toolchains
 let toolchains = [
   [toolchain version];
-  [node "lts"]
+  [node "20.11.0"]
   [deno "1.39.2"]
-  [rust "stable"]
-  [bun "1.0.21"]
-  [pnpm "8.14.0"]
+  [rust "1.75.0"]
+  [bun "1.0.22"]
+  [pnpm "8.14.1"]
 ]
 
 $toolchains | each {|it|
