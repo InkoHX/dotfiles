@@ -554,3 +554,6 @@ source ~/.cache/starship/init.nu
 
 # Aliases
 alias cat = bat
+
+# Carapace
+source ~/.cache/carapace/init.nu

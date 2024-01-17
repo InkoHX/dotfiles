@@ -33,6 +33,7 @@ paru -S --noconfirm --needed \
   ttf-udev-gothic \
   visual-studio-code-bin \
   bitwarden-cli-bin \
+  carapace-bin
 
 # Install proto
 # NOTE: AURにあるproto-binを使用すると、proto installが使用できないため公式のスクリプトを使ってインストールすることにした。
