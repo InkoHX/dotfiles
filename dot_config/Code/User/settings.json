@@ -54,6 +54,7 @@
       "icon": "terminal-linux"
     }
   },
+  "window.titleBarStyle": "custom",
   "workbench.colorTheme": "Atom One Dark",
   "workbench.iconTheme": "material-icon-theme"
 }
