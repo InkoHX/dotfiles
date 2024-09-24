@@ -197,7 +197,7 @@ plugins {
 // Default: $SHELL
 //
 // Use Nushell
-default_shell "nu"
+default_shell "zsh"
 
 // Toggle between having pane frames around the panes
 // Options:

@@ -1,0 +1,7 @@
+export PROTO_HOME="$HOME/.proto"
+export PATH="$PROTO_HOME/shims:$PROTO_HOME/bin:$PATH"
+
+export PATH="$HOME/.local/bin:$PATH"
+
+export EDITOR="code --wait --new-window"
+export VISUAL="nvim"

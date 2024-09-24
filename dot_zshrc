@@ -1,0 +1,40 @@
+setopt histignorealldups
+setopt sharehistory
+setopt correct
+setopt auto_menu
+setopt list_types
+setopt auto_param_slash
+setopt auto_param_keys
+setopt magic_equal_subst
+setopt complete_in_word
+setopt always_last_prompt
+setopt print_eight_bit
+setopt extended_glob
+setopt globdots
+setopt interactive_comments
+setopt mark_dirs
+
+# Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
+HISTSIZE=1000
+SAVEHIST=1000
+HISTFILE=~/.zsh_history
+
+# https://qiita.com/sprout2000/questions/daaa95192fab3ac291ee
+ZLE_REMOVE_SUFFIX_CHARS=$''
+
+# Use modern completion system
+autoload -Uz compinit && compinit
+
+# https://qiita.com/junkoda/items/4d915dbf898cdea4aed4
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+
+bindkey -e
+bindkey '^[[1;5C'   forward-word        # Ctrl-→
+bindkey '^[[1;5D'   backward-word       # Ctrl-←
+
+alias cat="bat --style=snip"
+alias ls="ls --color"
+alias lsa="ls --color -a"
+
+# Load sheldon
+eval "$(sheldon source)"
