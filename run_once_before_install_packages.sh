@@ -27,6 +27,12 @@ paru -S --noconfirm --needed \
   rustup \
   zsh \
   sheldon \
+  zed \
+  discord \
+  noto-fonts \
+  noto-fonts-cjk \
+  noto-fonts-emoji \
+  noto-fonts-extra
 
 # Install packages from AUR
 paru -S --noconfirm --needed \
